@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height: 60px;
+}
+
+#logo img{
+    margin: 15px 20px;
+    height: 70px;
+}
+#navbar{
+    display: flex;
+    position: relative; 
+    align-items: center;
+    top: 0px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar ul li a{
+    display: inline-block;
+    color: white;
+    padding: 4px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 600px;
+}
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: greenyellow;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before {
+    content: "";
+    background: url("../images/background1.jpg") no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+#home p {
+    color: white ;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px;
+    line-height: 40px;
+}
+.btn {
+    margin: 0px 9px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border: 2px solid grey;
+    border-radius: 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color:black;
+    color: white;
+}
+.center {
+    text-align: center;
+}
+#services {
+    margin: 30px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid yellowgreen;
+    padding: 25PX;
+    margin: 2PX 4px;
+    border-radius: 10px;
+    background-color: lightyellow;
+    transition: all 0.8s ease-in-out;
+    transition-duration: 1s;
+
+}
+#services .box:hover {
+    transform:scale(1.2);
+    background-color: white;
+    
+}
+#services .box img {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+#services .box p {
+    font-family:'Courier New', Courier, monospace;
+}
+.center{
+    text-align: center;
+}
+#products-section {
+    position: relative;
+    margin-bottom: 35px;
+}
+#products-section::before {
+    content: "";
+    position: absolute;
+    background: url(../images/keyboard.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#products img {
+    height: 150px;
+    border-radius: 25px;
+    padding: 15px;
+} 
+#items{
+    padding: 14px;
+}
+#products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#products-section h1 {
+    color: rgb(255, 255, 255);
+    align-items: center;
+    font-size: 2.5rem;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 46%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../images/us.jpg) no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 10px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+.cbtn{
+    padding: 14px 31px;
+    border: 2px solid white;
+    background-color: gray;
+    color: black;
+    margin: 17px;
+    width: 100%;
+    font-size: 1.0rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.cbtn:hover{
+    background-color: black;
+    color: white;
+}
+footer{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-bottom: 0px;
+
+}
+
+/* animations*/
+
+#products img{
+    animation: powlin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes powlin {
+    0%{
+        transform: scale(1.1)
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    260%{
+        transform: rotate(180deg);
+    }
+    360%{
+        transform: rotate(50deg);
+    }
+}
