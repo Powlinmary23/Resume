@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>Powlin Mary Portfolio</title>
 
 <style>
 
 body{
-font-family: Arial, Helvetica, sans-serif;
-background:#f4f4f4;
+font-family:Arial;
 margin:0;
-padding:0;
+background:#f4f4f4;
 }
 
 header{
 background:#0077ff;
 color:white;
 text-align:center;
-padding:40px 20px;
+padding:40px;
 }
 
-header h1{
-margin:0;
-font-size:32px;
+.profile{
+width:120px;
+border-radius:50%;
+margin-bottom:10px;
 }
 
-header p{
-margin-top:10px;
+nav{
+background:#222;
+text-align:center;
+padding:12px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
 }
 
 section{
@@ -34,7 +44,7 @@ margin:20px auto;
 background:white;
 border-radius:10px;
 width:80%;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
 h2{
@@ -42,8 +52,12 @@ border-bottom:2px solid #0077ff;
 padding-bottom:5px;
 }
 
-ul{
-line-height:1.8;
+.card{
+background:#f9f9f9;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 button{
@@ -51,24 +65,26 @@ padding:10px 20px;
 background:#0077ff;
 color:white;
 border:none;
-border-radius:6px;
+border-radius:5px;
 cursor:pointer;
-font-size:14px;
+transition:0.3s;
 }
 
 button:hover{
 background:#0056cc;
+transform:scale(1.05);
 }
 
-.project{
-margin-bottom:20px;
+.dark{
+background:#121212;
+color:white;
 }
 
 footer{
 text-align:center;
-padding:15px;
 background:#222;
 color:white;
+padding:15px;
 margin-top:30px;
 }
 
@@ -79,17 +95,39 @@ margin-top:30px;
 <body>
 
 <header>
+
+<img src="profile.png" class="profile">
+
 <h1>Powlin Mary</h1>
 <p>Aspiring Software Developer</p>
+
+<button onclick="darkMode()">Dark Mode</button>
+
 </header>
 
-<section>
+<nav>
+
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<section id="about">
+
 <h2>About Me</h2>
-<p>I am currently pursuing B.Tech in Information Technology and looking for opportunities as a fresher software developer.</p>
+
+<p>
+I am currently pursuing B.Tech in Information Technology and looking for opportunities as a fresher software developer.
+</p>
+
 </section>
 
-<section>
+<section id="skills">
+
 <h2>Skills</h2>
+
 <ul>
 <li>HTML</li>
 <li>CSS</li>
@@ -98,21 +136,45 @@ margin-top:30px;
 <li>C</li>
 <li>C++</li>
 </ul>
+
 </section>
 
 <section>
+
 <h2>Education</h2>
+
 <p>B.Tech Information Technology</p>
 <p>Sri Ramanujar Engineering College</p>
+
 </section>
 
 <section>
+
 <h2>Internship</h2>
+
 <p>Cloud Computing Intern – Qmos Technologies</p>
 <p>Web Development Intern – Pro Solution</p>
+
 </section>
 
 <section>
+
+<h2>Course Experience</h2>
+
+<p><b>Full Stack Development Course</b></p>
+
+<p>GUVI Geek Networks</p>
+
+<ul>
+<li>Completed certified training in HTML, CSS, JavaScript, React, and GitHub</li>
+<li>Built responsive web applications</li>
+<li>Learned version control and full-stack development concepts</li>
+</ul>
+
+</section>
+
+<section>
+
 <h2>Certificate</h2>
 
 <a href="certificate.png" target="_blank">
@@ -122,6 +184,7 @@ margin-top:30px;
 </section>
 
 <section>
+
 <h2>My Resume</h2>
 
 <a href="resume.pdf" target="_blank">
@@ -135,6 +198,7 @@ margin-top:30px;
 </section>
 
 <section>
+
 <h2>My Profiles</h2>
 
 <a href="https://www.linkedin.com/in/powlinmary23" target="_blank">
@@ -147,76 +211,110 @@ margin-top:30px;
 
 </section>
 
-<section>
+<section id="projects">
+
 <h2>Projects</h2>
 
-<div class="project">
-<b>Mini Project 1 – Gym Website</b><br><br>
+<div class="card">
+
+<h3>Mini Project 1 – Gym Website</h3>
+
+<p>Responsive gym website built using HTML and CSS.</p>
+
 <a href="mini-project%20-1/index.html" target="_blank">
 <button>View Project</button>
 </a>
+
 </div>
 
-<div class="project">
-<b>Mini Project 2 – Ecommerce Landing Page</b><br><br>
+<div class="card">
+
+<h3>Mini Project 2 – Ecommerce Landing Page</h3>
+
+<p>Simple ecommerce landing page design.</p>
+
 <a href="mini-project-2/index.html" target="_blank">
 <button>View Project</button>
 </a>
+
 </div>
 
-<div class="project">
-<b>Mini Project 3 – Digital Resume</b><br><br>
+<div class="card">
+
+<h3>Mini Project 3 – Digital Resume</h3>
+
+<p>Personal digital resume website.</p>
+
 <a href="mini-project-3/index.html" target="_blank">
 <button>View Project</button>
 </a>
+
 </div>
 
-<div class="project">
-<b>Mini Project 4 – Registration Form</b><br><br>
+<div class="card">
+
+<h3>Mini Project 4 – Registration Form</h3>
+
+<p>User registration form using HTML and CSS.</p>
+
 <a href="mini-project-4/index.html" target="_blank">
 <button>View Project</button>
 </a>
+
 </div>
 
 
-<div class="project">
-<b>Mini Project 5 – todo lists</b><br><br>
-<a href="mini-project-4/index.html" target="_blank">
+<div class="card">
+
+<h3>Mini Project 5 – Todo List</h3>
+
+<p>Simple todo list application using JavaScript.</p>
+
+<a href="mini-project-5/index.html" target="_blank">
 <button>View Project</button>
 </a>
+
 </div>
 
-<div class="project">
-<b>Mini Project 6 – registration form using function prototype</b><br><br>
-<a href="mini-project-4/index.html" target="_blank">
+
+<div class="card">
+
+<h3>Mini Project 6 – Registration Form using Prototype</h3>
+
+<p>JavaScript prototype based form validation project.</p>
+
+<a href="mini-project-6/index.html" target="_blank">
 <button>View Project</button>
 </a>
+
 </div>
-    
+
 </section>
 
-<section>
+<section id="contact">
+
 <h2>Contact</h2>
-<p>Email: powlinm23@gmail.com</p>
-<p>Phone: 9790439580</p>
-</section>
 
+<p>Email: powlinm23@gmail.com</p>
+
+<p>Phone: 9790439580</p>
+
+</section>
 
 <footer>
+
 <p>© 2026 Powlin Mary</p>
+
 </footer>
 
+<script>
+
+function darkMode(){
+document.body.classList.toggle("dark");
+}
+
+</script>
+
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
