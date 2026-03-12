@@ -32,7 +32,7 @@ font-size:36px;
 }
 
 header p{
-margin:10px 0 20px;
+margin:10px 0;
 }
 
 /* navbar */
@@ -65,6 +65,7 @@ background:white;
 border-radius:10px;
 width:85%;
 box-shadow:0 3px 10px rgba(0,0,0,0.1);
+animation:fadeUp 0.8s ease;
 }
 
 h2{
@@ -72,11 +73,28 @@ border-bottom:2px solid #0077ff;
 padding-bottom:5px;
 }
 
+/* skills icons */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.skill{
+background:#f9f9f9;
+padding:15px;
+border-radius:8px;
+font-size:18px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
 /* project grid */
 
 .projects{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:20px;
 }
 
@@ -89,7 +107,8 @@ transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-5px);
+transform:translateY(-8px);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
 }
 
 /* buttons */
@@ -110,10 +129,20 @@ background:#0056cc;
 transform:scale(1.05);
 }
 
-.buttons{
-display:flex;
-gap:10px;
-flex-wrap:wrap;
+/* animation */
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
 }
 
 /* footer */
@@ -136,10 +165,6 @@ margin-top:40px;
 
 <h1>Powlin Mary</h1>
 <p>Aspiring Software Developer</p>
-
-<a href="resume.pdf" download>
-<button>Download CV</button>
-</a>
 
 </header>
 
@@ -166,14 +191,16 @@ I am currently pursuing B.Tech in Information Technology and looking for opportu
 
 <h2>Skills</h2>
 
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>Python</li>
-<li>C</li>
-<li>C++</li>
-</ul>
+<div class="skills">
+
+<div class="skill">🌐 HTML</div>
+<div class="skill">🎨 CSS</div>
+<div class="skill">⚡ JavaScript</div>
+<div class="skill">🐍 Python</div>
+<div class="skill">💻 C</div>
+<div class="skill">💻 C++</div>
+
+</div>
 
 </section>
 
@@ -244,72 +271,54 @@ I am currently pursuing B.Tech in Information Technology and looking for opportu
 <h3>Mini Project 1 – Gym Website</h3>
 <p>Responsive gym website built using HTML and CSS.</p>
 
-<div class="buttons">
 <a href="mini-project%20-1/index.html" target="_blank">
 <button>Live Demo</button>
 </a>
-</div>
-
 </div>
 
 <div class="card">
 <h3>Mini Project 2 – Ecommerce Landing Page</h3>
 <p>Simple ecommerce landing page design.</p>
 
-<div class="buttons">
 <a href="mini-project-2/index.html" target="_blank">
 <button>Live Demo</button>
 </a>
-</div>
-
 </div>
 
 <div class="card">
 <h3>Mini Project 3 – Digital Resume</h3>
 <p>Personal digital resume website.</p>
 
-<div class="buttons">
 <a href="mini-project-3/index.html" target="_blank">
 <button>Live Demo</button>
 </a>
-</div>
-
 </div>
 
 <div class="card">
 <h3>Mini Project 4 – Registration Form</h3>
 <p>User registration form using HTML and CSS.</p>
 
-<div class="buttons">
 <a href="mini-project-4/index.html" target="_blank">
 <button>Live Demo</button>
 </a>
-</div>
-
 </div>
 
 <div class="card">
 <h3>Mini Project 5 – Todo List</h3>
 <p>Simple todo list application using JavaScript.</p>
 
-<div class="buttons">
 <a href="mini-project-5/index.html" target="_blank">
 <button>Live Demo</button>
 </a>
-</div>
-
 </div>
 
 <div class="card">
 <h3>Mini Project 6 – Prototype Registration Form</h3>
 <p>Registration form using JavaScript prototype.</p>
 
-<div class="buttons">
 <a href="mini-project-6/index.html" target="_blank">
 <button>Live Demo</button>
 </a>
-</div>
-
 </div>
 
 </div>
