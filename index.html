@@ -2,9 +2,14 @@
 <html>
 
 <head>
+
 <title>Powlin Mary Portfolio</title>
 
 <style>
+
+html{
+scroll-behavior:smooth;
+}
 
 body{
 font-family:Arial;
@@ -12,23 +17,28 @@ margin:0;
 background:#f4f4f4;
 }
 
+/* header */
+
 header{
 background:#0077ff;
 color:white;
 text-align:center;
-padding:40px;
+padding:50px 20px;
 }
 
-.profile{
-width:120px;
-border-radius:50%;
-margin-bottom:10px;
+header h1{
+margin:0;
+font-size:34px;
 }
+
+/* navbar */
 
 nav{
 background:#222;
 text-align:center;
-padding:12px;
+padding:15px;
+position:sticky;
+top:0;
 }
 
 nav a{
@@ -36,29 +46,50 @@ color:white;
 margin:15px;
 text-decoration:none;
 font-weight:bold;
+font-size:15px;
 }
 
+nav a:hover{
+color:#00bfff;
+}
+
+/* sections */
+
 section{
-padding:25px;
-margin:20px auto;
+padding:30px;
+margin:30px auto;
 background:white;
 border-radius:10px;
-width:80%;
+width:85%;
 box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
 h2{
 border-bottom:2px solid #0077ff;
-padding-bottom:5px;
+padding-bottom:6px;
+}
+
+/* project grid */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .card{
 background:#f9f9f9;
 padding:20px;
 border-radius:10px;
-margin-bottom:20px;
 box-shadow:0 2px 10px rgba(0,0,0,0.1);
+transition:0.3s;
 }
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* buttons */
 
 button{
 padding:10px 20px;
@@ -67,6 +98,7 @@ color:white;
 border:none;
 border-radius:5px;
 cursor:pointer;
+margin-top:10px;
 transition:0.3s;
 }
 
@@ -75,17 +107,14 @@ background:#0056cc;
 transform:scale(1.05);
 }
 
-.dark{
-background:#121212;
-color:white;
-}
+/* footer */
 
 footer{
 text-align:center;
 background:#222;
 color:white;
-padding:15px;
-margin-top:30px;
+padding:20px;
+margin-top:40px;
 }
 
 </style>
@@ -96,12 +125,8 @@ margin-top:30px;
 
 <header>
 
-<img src="profile.png" class="profile">
-
 <h1>Powlin Mary</h1>
 <p>Aspiring Software Developer</p>
-
-<button onclick="darkMode()">Dark Mode</button>
 
 </header>
 
@@ -215,77 +240,55 @@ I am currently pursuing B.Tech in Information Technology and looking for opportu
 
 <h2>Projects</h2>
 
+<div class="projects">
+
 <div class="card">
-
 <h3>Mini Project 1 – Gym Website</h3>
-
 <p>Responsive gym website built using HTML and CSS.</p>
-
 <a href="mini-project%20-1/index.html" target="_blank">
 <button>View Project</button>
 </a>
-
 </div>
 
 <div class="card">
-
 <h3>Mini Project 2 – Ecommerce Landing Page</h3>
-
 <p>Simple ecommerce landing page design.</p>
-
 <a href="mini-project-2/index.html" target="_blank">
 <button>View Project</button>
 </a>
-
 </div>
 
 <div class="card">
-
 <h3>Mini Project 3 – Digital Resume</h3>
-
 <p>Personal digital resume website.</p>
-
 <a href="mini-project-3/index.html" target="_blank">
 <button>View Project</button>
 </a>
-
 </div>
 
 <div class="card">
-
 <h3>Mini Project 4 – Registration Form</h3>
-
 <p>User registration form using HTML and CSS.</p>
-
 <a href="mini-project-4/index.html" target="_blank">
 <button>View Project</button>
 </a>
-
 </div>
 
-
 <div class="card">
-
 <h3>Mini Project 5 – Todo List</h3>
-
 <p>Simple todo list application using JavaScript.</p>
-
 <a href="mini-project-5/index.html" target="_blank">
 <button>View Project</button>
 </a>
-
 </div>
 
-
 <div class="card">
-
 <h3>Mini Project 6 – Registration Form using Prototype</h3>
-
 <p>JavaScript prototype based form validation project.</p>
-
 <a href="mini-project-6/index.html" target="_blank">
 <button>View Project</button>
 </a>
+</div>
 
 </div>
 
@@ -296,7 +299,6 @@ I am currently pursuing B.Tech in Information Technology and looking for opportu
 <h2>Contact</h2>
 
 <p>Email: powlinm23@gmail.com</p>
-
 <p>Phone: 9790439580</p>
 
 </section>
@@ -306,14 +308,6 @@ I am currently pursuing B.Tech in Information Technology and looking for opportu
 <p>© 2026 Powlin Mary</p>
 
 </footer>
-
-<script>
-
-function darkMode(){
-document.body.classList.toggle("dark");
-}
-
-</script>
 
 </body>
 
