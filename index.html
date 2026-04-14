@@ -10,15 +10,15 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:'Segoe UI',sans-serif;
+font-family:'Poppins',sans-serif;
 margin:0;
-background:#f4f7fb;
+background:linear-gradient(to right,#eef2ff,#f8fbff);
 }
 
 /* HERO */
 
 header{
-background:linear-gradient(135deg,#0077ff,#00c6ff);
+background:linear-gradient(135deg,#0077ff,#00c6ff,#6a11cb);
 color:white;
 text-align:center;
 padding:100px 20px;
@@ -34,10 +34,6 @@ font-size:20px;
 margin:10px 0;
 }
 
-.hero-btns button{
-margin:10px;
-}
-
 /* NAV */
 
 nav{
@@ -46,7 +42,6 @@ padding:15px;
 text-align:center;
 position:sticky;
 top:0;
-z-index:1000;
 }
 
 nav a{
@@ -67,13 +62,15 @@ padding:50px;
 margin:30px auto;
 width:85%;
 background:white;
-border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
+/* HEADINGS */
+
 h2{
-border-bottom:3px solid #0077ff;
-padding-bottom:8px;
+border-left:5px solid #0077ff;
+padding-left:10px;
 }
 
 /* SKILLS */
@@ -85,7 +82,8 @@ gap:20px;
 }
 
 .skill{
-background:#eef4ff;
+background:linear-gradient(135deg,#00c6ff,#0077ff);
+color:white;
 padding:15px;
 text-align:center;
 border-radius:10px;
@@ -94,9 +92,8 @@ transition:0.3s;
 }
 
 .skill:hover{
-background:#0077ff;
-color:white;
 transform:scale(1.1);
+background:linear-gradient(135deg,#6a11cb,#2575fc);
 }
 
 /* PROJECTS */
@@ -108,27 +105,23 @@ gap:25px;
 }
 
 .card{
-background:white;
+background:linear-gradient(135deg,#ffffff,#f1f7ff);
 padding:20px;
-border-radius:12px;
-box-shadow:0 3px 15px rgba(0,0,0,0.1);
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
 .card:hover{
 transform:translateY(-10px);
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
-}
-
-.card h3{
-margin-top:0;
+box-shadow:0 15px 40px rgba(0,0,0,0.2);
 }
 
 /* BUTTON */
 
 button{
 padding:10px 20px;
-background:#0077ff;
+background:linear-gradient(135deg,#0077ff,#00c6ff);
 color:white;
 border:none;
 border-radius:6px;
@@ -137,8 +130,8 @@ transition:0.3s;
 }
 
 button:hover{
-background:#0056cc;
 transform:scale(1.05);
+background:linear-gradient(135deg,#6a11cb,#2575fc);
 }
 
 /* FOOTER */
@@ -160,10 +153,8 @@ padding:20px;
 <h1>Powlin Mary</h1>
 <p>Full Stack Developer | React Developer</p>
 
-<div class="hero-btns">
 <a href="#projects"><button>View Projects</button></a>
 <a href="Resume.pdf"><button>Download Resume</button></a>
-</div>
 </header>
 
 <nav>
@@ -176,7 +167,7 @@ padding:20px;
 <section id="about">
 <h2>About Me</h2>
 <p>
-Passionate Full Stack Developer skilled in React, JavaScript, and modern web technologies.
+Passionate Full Stack Developer skilled in React, JavaScript and modern web technologies.
 I build responsive and user-friendly applications.
 </p>
 </section>
@@ -199,50 +190,42 @@ I build responsive and user-friendly applications.
 <div class="projects">
 
 <div class="card">
-<h3>Gym Website</h3>
-<p>Responsive gym website using HTML & CSS</p>
+<h3>Mini Project 1 – Gym Website</h3>
 <a href="mini-project-1/index.html"><button>Live Demo</button></a>
 </div>
 
 <div class="card">
-<h3>Ecommerce Page</h3>
-<p>Landing page design</p>
+<h3>Mini Project 2 – Ecommerce</h3>
 <a href="mini-project-2/index.html"><button>Live Demo</button></a>
 </div>
 
 <div class="card">
-<h3>Digital Resume</h3>
-<p>Personal resume website</p>
+<h3>Mini Project 3 – Resume</h3>
 <a href="mini-project-3/index.html"><button>Live Demo</button></a>
 </div>
 
 <div class="card">
-<h3>Registration Form</h3>
-<p>HTML form design</p>
+<h3>Mini Project 4 – Form</h3>
 <a href="mini-project-4/index.html"><button>Live Demo</button></a>
 </div>
 
 <div class="card">
-<h3>Todo List</h3>
-<p>JavaScript todo app</p>
+<h3>Mini Project 5 – Todo</h3>
 <a href="mini-project-5/index.html"><button>Live Demo</button></a>
 </div>
 
 <div class="card">
-<h3>Prototype Form</h3>
-<p>JS prototype form</p>
+<h3>Mini Project 6 – Prototype</h3>
 <a href="mini-project-6/index.html"><button>Live Demo</button></a>
 </div>
 
 <div class="card">
-<h3>Live News App</h3>
-<p>React news app using API</p>
+<h3>Mini Project 7 – Live News</h3>
 <a href="mini-project-7/"><button>Live Demo</button></a>
 </div>
 
 <div class="card">
-<h3>Signup/Login App</h3>
-<p>React authentication app</p>
+<h3>Mini Project 8 – Login App</h3>
 <a href="https://powlinmary23.github.io/signup-form/">
 <button>Live Demo</button>
 </a>
