@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <title>Powlin Mary Portfolio</title>
 
 <style>
@@ -10,36 +12,36 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:'Poppins',sans-serif;
+font-family:Arial;
 margin:0;
-background:linear-gradient(to right,#eef2ff,#f8fbff);
+background:#f4f4f4;
 }
 
-/* HERO */
+/* HERO SECTION */
 
 header{
-background:linear-gradient(135deg,#0077ff,#00c6ff,#6a11cb);
+background:linear-gradient(135deg,#0077ff,#00c6ff);
 color:white;
 text-align:center;
-padding:100px 20px;
+padding:80px 20px;
 }
 
 header h1{
-font-size:45px;
 margin:0;
+font-size:40px;
 }
 
 header p{
-font-size:20px;
-margin:10px 0;
+font-size:18px;
+margin-top:10px;
 }
 
-/* NAV */
+/* NAVBAR */
 
 nav{
-background:#111;
-padding:15px;
+background:#222;
 text-align:center;
+padding:15px;
 position:sticky;
 top:0;
 }
@@ -49,28 +51,28 @@ color:white;
 margin:15px;
 text-decoration:none;
 font-weight:bold;
+font-size:15px;
 }
 
 nav a:hover{
 color:#00c6ff;
 }
 
-/* SECTION */
+/* SECTIONS */
 
 section{
-padding:50px;
-margin:30px auto;
-width:85%;
+padding:40px;
+margin:40px auto;
 background:white;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
+border-radius:10px;
+width:85%;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+animation:fadeUp 0.8s ease;
 }
 
-/* HEADINGS */
-
 h2{
-border-left:5px solid #0077ff;
-padding-left:10px;
+border-bottom:2px solid #0077ff;
+padding-bottom:6px;
 }
 
 /* SKILLS */
@@ -79,68 +81,80 @@ padding-left:10px;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
 gap:20px;
+text-align:center;
 }
 
 .skill{
-background:linear-gradient(135deg,#00c6ff,#0077ff);
-color:white;
+background:#f9f9f9;
 padding:15px;
-text-align:center;
-border-radius:10px;
-font-weight:bold;
-transition:0.3s;
+border-radius:8px;
+font-size:18px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-.skill:hover{
-transform:scale(1.1);
-background:linear-gradient(135deg,#6a11cb,#2575fc);
-}
-
-/* PROJECTS */
+/* PROJECT GRID */
 
 .projects{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
 }
 
 .card{
-background:linear-gradient(135deg,#ffffff,#f1f7ff);
+background:#f9f9f9;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 padding:20px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
 .card:hover{
 transform:translateY(-10px);
-box-shadow:0 15px 40px rgba(0,0,0,0.2);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 /* BUTTON */
 
 button{
 padding:10px 20px;
-background:linear-gradient(135deg,#0077ff,#00c6ff);
+background:#0077ff;
 color:white;
 border:none;
-border-radius:6px;
+border-radius:5px;
 cursor:pointer;
+margin-top:10px;
 transition:0.3s;
 }
 
 button:hover{
+background:#0056cc;
 transform:scale(1.05);
-background:linear-gradient(135deg,#6a11cb,#2575fc);
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
 }
 
 /* FOOTER */
 
 footer{
-background:#111;
-color:white;
 text-align:center;
+background:#222;
+color:white;
 padding:20px;
+margin-top:40px;
 }
 
 </style>
@@ -150,108 +164,216 @@ padding:20px;
 <body>
 
 <header>
-<h1>Powlin Mary</h1>
-<p>Full Stack Developer | React Developer</p>
 
-<a href="#projects"><button>View Projects</button></a>
-<a href="Resume.pdf"><button>Download Resume</button></a>
+<h1>Powlin Mary</h1>
+<p>Aspiring Software Developer</p>
+
 </header>
 
 <nav>
+
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
+
 </nav>
 
 <section id="about">
+
 <h2>About Me</h2>
+
 <p>
-Passionate Full Stack Developer skilled in React, JavaScript and modern web technologies.
-I build responsive and user-friendly applications.
+I am currently pursuing B.Tech in Information Technology and looking for opportunities as a fresher software developer.
 </p>
+
 </section>
 
 <section id="skills">
+
 <h2>Skills</h2>
+
 <div class="skills">
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
-<div class="skill">React</div>
-<div class="skill">Python</div>
-<div class="skill">C / C++</div>
+
+<div class="skill">🌐 HTML</div>
+<div class="skill">🎨 CSS</div>
+<div class="skill">⚡ JavaScript</div>
+<div class="skill">🐍 Python</div>
+<div class="skill">💻 C</div>
+<div class="skill">💻 C++</div>
+
 </div>
+
+</section>
+
+<section>
+
+<h2>Education</h2>
+
+<p>B.Tech Information Technology</p>
+<p>Sri Ramanujar Engineering College</p>
+
+</section>
+
+<section>
+
+<h2>Internship</h2>
+
+<p>Cloud Computing Intern – Qmos Technologies</p>
+<p>Web Development Intern – SD Pro Solution</p>
+
+</section>
+
+<section>
+
+<h2>Course Experience</h2>
+
+<p><b>Full Stack Development Course</b></p>
+<p>GUVI Geek Networks</p>
+
+<ul>
+<li>Completed certified training in HTML, CSS, JavaScript, React, and GitHub</li>
+<li>Built responsive web applications</li>
+<li>Learned version control and full-stack development concepts</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Certificate</h2>
+
+<a href="certificate.png" target="_blank">
+<button>View Certificate</button>
+</a>
+
+</section>
+
+<section>
+
+<h2>My Resume</h2>
+
+<a href="Resume.pdf" target="_blank">
+  <button>View Resume</button>
+</a>
+
+<a href="Resume.pdf" download>
+  <button>Download Resume</button>
+</a>
+
+</section>
+
+<section>
+
+<h2>My Profiles</h2>
+
+<a href="https://www.linkedin.com/in/powlinmary23" target="_blank">
+<button>LinkedIn</button>
+</a>
+
+<a href="https://github.com/Powlinmary23" target="_blank">
+<button>GitHub</button>
+</a>
+
 </section>
 
 <section id="projects">
+
 <h2>Projects</h2>
 
 <div class="projects">
 
 <div class="card">
 <h3>Mini Project 1 – Gym Website</h3>
-<a href="mini-project-1/index.html"><button>Live Demo</button></a>
-</div>
+<p>Responsive gym website built using HTML and CSS.</p>
 
-<div class="card">
-<h3>Mini Project 2 – Ecommerce</h3>
-<a href="mini-project-2/index.html"><button>Live Demo</button></a>
-</div>
-
-<div class="card">
-<h3>Mini Project 3 – Resume</h3>
-<a href="mini-project-3/index.html"><button>Live Demo</button></a>
-</div>
-
-<div class="card">
-<h3>Mini Project 4 – Form</h3>
-<a href="mini-project-4/index.html"><button>Live Demo</button></a>
-</div>
-
-<div class="card">
-<h3>Mini Project 5 – Todo</h3>
-<a href="mini-project-5/index.html"><button>Live Demo</button></a>
-</div>
-
-<div class="card">
-<h3>Mini Project 6 – Prototype</h3>
-<a href="mini-project-6/index.html"><button>Live Demo</button></a>
-</div>
-
-<div class="card">
-<h3>Mini Project 7 – Live News</h3>
-<a href="mini-project-7/"><button>Live Demo</button></a>
-</div>
-
-<div class="card">
-<h3>Mini Project 8 – Login App</h3>
-<a href="https://powlinmary23.github.io/signup-form/">
+<a href="mini-project%20-1/index.html" target="_blank">
 <button>Live Demo</button>
 </a>
 </div>
 
-</div>
-</section>
+<div class="card">
+<h3>Mini Project 2 – Ecommerce Landing Page</h3>
+<p>Simple ecommerce landing page design.</p>
 
-<section>
-<h2>Resume</h2>
-<a href="Resume.pdf" target="_blank"><button>View Resume</button></a>
-<a href="Resume.pdf" download><button>Download Resume</button></a>
+<a href="mini-project-2/index.html" target="_blank">
+<button>Live Demo</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Mini Project 3 – Digital Resume</h3>
+<p>Personal digital resume website.</p>
+
+<a href="mini-project-3/index.html" target="_blank">
+<button>Live Demo</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Mini Project 4 – Registration Form</h3>
+<p>User registration form using HTML and CSS.</p>
+
+<a href="mini-project-4/index.html" target="_blank">
+<button>Live Demo</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Mini Project 5 – Todo List</h3>
+<p>Simple todo list application using JavaScript.</p>
+
+<a href="mini-project-5/index.html" target="_blank">
+<button>Live Demo</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Mini Project 6 – Prototype Registration Form</h3>
+<p>Registration form using JavaScript prototype.</p>
+
+<a href="mini-project-6/index.html" target="_blank">
+<button>Live Demo</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Mini Project 7 – Live News App</h3>
+<p>Live news web application built using React and News API with search and infinite scroll.</p>
+
+<a href="mini-project-7/index.html" target="_blank">
+<button>Live Demo</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Mini Project 8 – React Signup & Login App</h3>
+
+<p>User authentication web application built using React, React Router and Bootstrap.</p>
+
+<a href="https://powlinmary23.github.io/signup-form/">
+<button class="btn">Live Demo</button>
+</a>
+
+</div>
+
 </section>
 
 <section id="contact">
+
 <h2>Contact</h2>
+
 <p>Email: powlinm23@gmail.com</p>
 <p>Phone: 9790439580</p>
 
-<a href="https://www.linkedin.com/in/powlinmary23"><button>LinkedIn</button></a>
-<a href="https://github.com/Powlinmary23"><button>GitHub</button></a>
 </section>
 
 <footer>
+
 <p>© 2026 Powlin Mary</p>
+
 </footer>
 
 </body>
+
 </html>
